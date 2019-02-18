@@ -1,0 +1,36 @@
+.hero-content {
+	padding: 220px 0;
+	background: url($image-header) no-repeat;
+	background-size: cover;
+
+	.entry-header {
+		position: relative;
+		text-align: center;
+	}
+
+	.countdown {
+		margin-top: 40px;
+		.countdown-holder {
+			min-width: 150px;
+			margin-bottom: 30px;
+
+			.dday,
+			.dhour,
+			.dmin,
+			.dsec {
+				display: block;
+				font-size: $font-size-h1;
+				font-weight: 600;
+				line-height: 1;
+				color: $brand;
+			}
+
+			label {
+				display: block;
+				font-size: $font-size-h3;
+				font-weight: 600;
+				color: #fff;
+			}
+		}
+	}
+}

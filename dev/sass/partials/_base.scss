@@ -7,6 +7,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+	outline: none;
 }
 
 %fix {
@@ -23,9 +24,9 @@
 }
 
 body {
-    background-color: $bg-body;
-    color: $colot-text;
-    font-family: $font-family-regular;
+    background-color: $primarySoft;
+    color: $black;
+    font-family: $font-secondary;
     font-weight: 400;
     @include rem(font-size, $font-size-base);
 }
@@ -44,25 +45,31 @@ ul {
     padding: 0;
 }
 
-h2 {
-    margin: 0 auto;
-    text-align: center;
-    padding: 60px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-primary;
 }
 
 a {
-    font-family: $font-family-medium;
     text-decoration: none;
-    color: $colot-text;
+    color: $primary;
 }
 
 button {
-    background-color: $bg-button;
+    background-color: $brand;
     border: 0;
     border-radius: 5px;
     padding: 15px;
     position: relative;
   	left: 50%;
   	transform: translateX(-50%);
-    @include rem(font-size, $font-size-button);
+    @include rem(font-size, $font-size-base);
+}
+
+.flex {
+	display: flex;
 }

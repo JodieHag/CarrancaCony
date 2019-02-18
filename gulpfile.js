@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+
 // Include Our Plugins
 const log = require('fancy-log')
 const sass = require('gulp-sass')
@@ -7,6 +8,7 @@ const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
 const babel = require('gulp-babel')
 const pug = require('gulp-pug')
+const prettier = require('gulp-prettier')
 const concat = require('gulp-concat')
 const rename = require('gulp-rename')
 const connect = require('gulp-connect')
@@ -15,6 +17,7 @@ const merge = require('merge-stream')
 const open = require('gulp-open')
 const livereload = require('gulp-livereload')
 const eslint = require('gulp-eslint')
+
 // importar configuración de idioma y páginas
 const config = require('./config')
 
@@ -28,14 +31,6 @@ gulp.task('connect', async () => {
     livereload: true
   })
 })
-
-// lint JS
-/*gulp.task('lint', () => {
-  return gulp.src('dev/js/!*.js')
-    .pipe(eslint('./.eslintrc'))
-    .pipe(eslint.format('table'))
-    .pipe(eslint.failAfterError())
-})*/
 
 // Compile sass to css, concat and minify
 const plugins = [
@@ -54,7 +49,6 @@ const plugins = [
 // css
 gulp.task('css', () => {
   return gulp.src(['dev/css/**/*.*'])
-    .pipe(postcss(plugins))
     // .pipe(concat('app.min.js'))
     .pipe(gulp.dest('www/css'))
     .pipe(livereload())
@@ -62,7 +56,7 @@ gulp.task('css', () => {
 })
 
 gulp.task('sass', () => {
-  return gulp.src('dev/sass/style.scss')
+  return gulp.src(['dev/sass/style.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
     // .pipe(concat('styles.css')) // los mete todos en el mismo archivo
@@ -80,9 +74,9 @@ gulp.task('scripts', () => {
     .pipe(eslint('./.eslintrc'))
     .pipe(eslint.format('table'))
     .pipe(eslint.failAfterError())
+    .pipe(prettier({ singleQuote: true }))
     .pipe(babel())
     .pipe(concat('main.js'))
-    // .pipe(uglify())
     .pipe(gulp.dest('www/js'))
     .pipe(livereload())
     .on('end', () => { log('scripts Done!') })

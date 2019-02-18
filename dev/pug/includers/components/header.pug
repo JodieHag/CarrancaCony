@@ -1,34 +1,37 @@
-header
-  nav#nav
-    ul#main-menu
-      li
-        a(href="")
-          i.fa.fa-globe
-          span
-            |  Idioma
-        ul.submenu
-          li
-            a(href="index_es.html")
-              span
-                |	#{i18n.general.es}
-          li
-            a(href="index_ca.html")
-              span
-                |	#{i18n.general.ca}
-          li
-            a(href="index_en.html")
-              span
-                |	#{i18n.general.en}
-
-      li
-        a(href="index_"+lang+".html")
-          span
-            | #{i18n.general.home}
-      li
-        a(href="form_"+lang+".html")
-          span
-            | #{i18n.general.confirmacion}
-      li
-        a(href="gracias_"+lang+".html")
-          span
-            | #{i18n.general.gracias}
+header.site-header
+	.header-bar
+		.container-fluid
+			.row.align-items-center
+				.col-10.col-lg-4
+					h1.site-branding.flex
+						a(href='#') Carrancà Cony
+				.col-2.col-lg-8
+						nav.site-navigation
+							.hamburger-menu.d-lg-none
+								span
+								span
+								span
+								span
+							ul
+								li
+									a(href="index_es.html")
+										span
+											|  #{i18n.general.es}
+								li
+									a(href="index_ca.html")
+										span
+											|  #{i18n.general.ca}
+								li
+									a(href='#') HOME
+								li
+									a(href="index_" + lang + ".html")
+										span
+											| #{i18n.general.home}
+								li
+									a(href="form_" + lang + ".html")
+										span
+											| #{i18n.general.confirmacion}
+								li
+									a(href="gracias_" + lang + ".html")
+										span
+											| #{i18n.general.gracias}
