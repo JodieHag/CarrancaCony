@@ -92,11 +92,7 @@ gulp.task('statics', () => {
     .pipe(gulp.dest('www/pdf'))
     .pipe(livereload())
 
-	var favicon = gulp.src('src/favicon/**/*.*')
-		.pipe(gulp.dest('www/favicon'))
-		.pipe(livereload())
-
-  return merge(media, pdf, favicon)
+  return merge(media, pdf)
 })
 
 // compile pug to html and translate
