@@ -48,7 +48,7 @@ const plugins = [
 
 // css
 gulp.task('css', () => {
-  return gulp.src(['dev/css/**/*.*'])
+  return gulp.src(['src/css/**/*.*'])
     // .pipe(concat('app.min.js'))
     .pipe(gulp.dest('www/css'))
     .pipe(livereload())
@@ -56,7 +56,7 @@ gulp.task('css', () => {
 })
 
 gulp.task('sass', () => {
-  return gulp.src(['dev/sass/style.scss'])
+  return gulp.src(['src/sass/style.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
     // .pipe(concat('styles.css')) // los mete todos en el mismo archivo
@@ -70,7 +70,7 @@ gulp.task('sass', () => {
 
 // Concatenate & Minify JS
 gulp.task('scripts', () => {
-  return gulp.src(['dev/js/*.js'])
+  return gulp.src(['src/js/*.js'])
     .pipe(eslint('./.eslintrc'))
     .pipe(eslint.format('table'))
     .pipe(eslint.failAfterError())
@@ -84,15 +84,19 @@ gulp.task('scripts', () => {
 
 // copy statics && external css
 gulp.task('statics', () => {
-  var media = gulp.src('dev/media/**/*.*')
+  var media = gulp.src('src/media/**/*.*')
     .pipe(gulp.dest('www/media'))
     .pipe(livereload())
 
-  var pdf = gulp.src('dev/pdf/**/*.*')
+  var pdf = gulp.src('src/pdf/**/*.*')
     .pipe(gulp.dest('www/pdf'))
     .pipe(livereload())
 
-  return merge(media, pdf)
+	var favicon = gulp.src('src/favicon/**/*.*')
+		.pipe(gulp.dest('www/favicon'))
+		.pipe(livereload())
+
+  return merge(media, pdf, favicon)
 })
 
 // compile pug to html and translate
@@ -102,11 +106,11 @@ gulp.task('pug', async () => {
   for (const lang in projectSettings.langs) {
     for (const page in projectSettings.pages) {
       translations.push(
-        await gulp.src('dev/pug/' + projectSettings.pages[page] + '.pug')
+        await gulp.src('src/pug/' + projectSettings.pages[page] + '.pug')
 					.on('error', (error) => console.log(error))
           .pipe(pug({
             locals: {
-              i18n: require('./dev/i18n/' + projectSettings.langs[lang] + '/translation.json'),
+              i18n: require('./src/i18n/' + projectSettings.langs[lang] + '/translation.json'),
               lang: lang
             }
           }))
@@ -129,7 +133,7 @@ gulp.task('open', async () => {
 
 // Concatenate & Minify JS
 gulp.task('vendor', () => {
-  return gulp.src(['dev/js/vendor/**/*.*'])
+  return gulp.src(['src/js/vendor/**/*.*'])
     // .pipe(concat('app.min.js'))
     // .pipe(uglify())
     .pipe(gulp.dest('www/js/vendor'))
@@ -139,7 +143,7 @@ gulp.task('vendor', () => {
 // Json
 gulp.task('json', () => {
   for (const lang in projectSettings.langs) {
-    return gulp.src(['dev/i18n/' + projectSettings.langs[lang] + '/errormessage.json'])
+    return gulp.src(['src/i18n/' + projectSettings.langs[lang] + '/errormessage.json'])
       .pipe(gulp.dest('www/i18n/' + projectSettings.langs[lang]))
       .pipe(livereload())
   }
@@ -148,14 +152,14 @@ gulp.task('json', () => {
 //  Watch Files For Changes
 gulp.task('watch', async () => {
   livereload.listen()
-  await gulp.watch('dev/js/vendor/**/*.js', gulp.series(['vendor']))
-  await gulp.watch('dev/js/*.js', gulp.series(['scripts']))
-  await gulp.watch('dev/js/components/*.js', gulp.series(['scripts']))
-  await gulp.watch('dev/sass/*/*.*', gulp.series(['sass']))
-  await gulp.watch(['dev/pug/*.pug', 'dev/pug/**/*.pug'], gulp.series(['pug']))
-  await gulp.watch('dev/pug/partials/*.pug', gulp.series(['pug']))
+  await gulp.watch('src/js/vendor/**/*.js', gulp.series(['vendor']))
+  await gulp.watch('src/js/*.js', gulp.series(['scripts']))
+  await gulp.watch('src/js/components/*.js', gulp.series(['scripts']))
+  await gulp.watch('src/sass/*/*.*', gulp.series(['sass']))
+  await gulp.watch(['src/pug/*.pug', 'src/pug/**/*.pug'], gulp.series(['pug']))
+  await gulp.watch('src/pug/partials/*.pug', gulp.series(['pug']))
   for (const lang in projectSettings.langs) {
-    await gulp.watch(`dev/i18n/${projectSettings.langs[lang]}/*.json`, gulp.series(['json']))
+    await gulp.watch(`src/i18n/${projectSettings.langs[lang]}/*.json`, gulp.series(['json']))
   }
 })
 
