@@ -2,6 +2,7 @@
 	padding: 220px 0;
 	background: url($image-header) no-repeat;
 	background-size: cover;
+	background-position: center center;
 
 	.entry-header {
 		position: relative;
@@ -23,13 +24,14 @@
 				font-weight: 600;
 				line-height: 1;
 				color: $brand;
+				text-shadow: 2px 2px 2px $secondary;
 			}
 
 			label {
 				display: block;
 				font-size: $font-size-h3;
 				font-weight: 600;
-				color: #fff;
+				color: $white;
 			}
 		}
 	}
