@@ -4,31 +4,31 @@
 *,
 *:after,
 *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	outline: none;
 }
 
 %fix {
-    &:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
 
-    &:before {
-        content: "";
-        display: table;
-    }
+	&:before {
+		content: "";
+		display: table;
+	}
 }
 
 body {
-    background-color: $primarySoft;
-    color: $black;
-    font-family: $font-secondary;
-    font-weight: 400;
-    @include rem(font-size, $font-size-base);
+	background-color: $white;
+	color: $black;
+	font-family: $font-secondary;
+	font-weight: 400;
+	@include rem(font-size, $font-size-base);
 }
 
 .content {

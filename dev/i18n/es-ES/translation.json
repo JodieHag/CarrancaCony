@@ -11,6 +11,36 @@
 		"confirmacion" : "Formulario",
 		"home": "Inicio"
   },
+	"lineup": {
+		"title": "Line up",
+		"subtitle": "",
+		"items": [
+			{
+				"picture": "http://placekitten.com/g/200/300",
+				"name": "Pasquines",
+				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"link": "#"
+			},
+			{
+				"picture": "http://placekitten.com/g/200/300",
+				"name": "Maruja Limón",
+				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"link": "#"
+			},
+			{
+				"picture": "http://placekitten.com/g/200/300",
+				"name": "Fancy Candy girls",
+				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"link": ""
+			},
+			{
+				"picture": "http://placekitten.com/g/200/300",
+				"name": "DJ M&M",
+				"description": "Annoy the old grumpy cat, start a fight and then retreat to wash when i lose if it fits, i sits jump off balcony, onto stranger",
+				"link": ""
+			}
+		]
+	},
   "cookies": {
     "text": "This website uses cookies. By continuing to explore this site, we understand that you accept their use. Further information:",
     "link_text": "Cookie Policy",

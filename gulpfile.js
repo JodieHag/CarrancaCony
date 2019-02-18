@@ -103,6 +103,7 @@ gulp.task('pug', async () => {
     for (const page in projectSettings.pages) {
       translations.push(
         await gulp.src('dev/pug/' + projectSettings.pages[page] + '.pug')
+					.on('error', (error) => console.log(error))
           .pipe(pug({
             locals: {
               i18n: require('./dev/i18n/' + projectSettings.langs[lang] + '/translation.json'),

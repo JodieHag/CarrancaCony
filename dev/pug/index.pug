@@ -1,8 +1,9 @@
 include includers/head.pug
 body(data-language!=lang)
-	include includers/components/header.pug
+	include includers/partials/header.pug
 	//.cookies-data(data-text='#{i18n.cookies.text}' data-link-text='#{i18n.cookies.link_text}' data-url='#{i18n.cookies.url}')
 	main
-		include includers/components/countdown.pug
+		include includers/partials/countdown.pug
+		include includers/partials/lineup.pug
 
-include includers/components/footer.pug
+include includers/partials/footer.pug

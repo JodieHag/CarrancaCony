@@ -1,8 +1,7 @@
 const config = {
   'langs': {
     'es': 'es-ES',
-    'ca': 'es-CA',
-    'en': 'en-GB'
+    'ca': 'es-CA'
   },
   'pages': {
     'index': 'index',

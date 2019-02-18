@@ -1,0 +1,117 @@
+/* ======================================================================
+	Lineup
+======================================================================== */
+
+.content-section {
+	width: 100%;
+	padding-bottom: 120px;
+	@include imgRetina($background-lineup, png, 100%, auto, center, repeat);
+
+	.lineup-artists-headline {
+		margin-top: 115px;
+
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			font-weight: 600;
+			color: $primarySoft;
+		}
+
+		.lineup-artists {
+			padding-top: 80px;
+
+			.lineup-artists-wrap {
+				margin-top: 80px;
+
+				@include modular-mq(sm) {
+					margin-top: 30px;
+				}
+
+				&:nth-of-type(even) {
+					.lineup-artists-description-container {
+
+						@include modular-mq(sm) {
+							right: -75px;
+							left: auto;
+						}
+					}
+				}
+
+
+				.lineup-artists-description {
+					position: relative;
+					width: 100%;
+
+					@include modular-mq(sm) {
+						width: calc(100% - 360px);
+					}
+
+					.entry-title {
+						font-weight: 600;
+						color: $black;
+					}
+
+					.entry-content {
+						margin-top: 20px;
+						color: $secondary;
+						line-height: 2;
+					}
+				}
+
+				.lineup-artists-description-container {
+					position: relative;
+					padding: 30px;
+					background: $white;
+					box-shadow: 50px 40px 115px rgba(0,0,0,.1);
+
+					@include modular-mq(sm) {
+						position: absolute;
+						z-index: 99;
+						top: 100px;
+						left: -75px;
+						width: calc(100% + 75px);
+					}
+
+					@include modular-mq(md) {
+						max-width: 660px;
+						padding: 50px;
+					}
+				}
+
+				.box-link {
+					position: absolute;
+					margin: 0;
+					padding: 0;
+					top: -24px;
+					right: 50px;
+					z-index: 999;
+				}
+			}
+
+			.featured-image {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+
+				@include modular-mq(sm) {
+					max-width: 360px;
+				}
+
+				img {
+					width: 100%;
+					max-width: 100%;
+
+					@include modular-mq(sm) {
+						max-height: 417px;
+						object-fit: cover;
+					}
+
+					@include modular-mq(ssm) {
+						max-height: 100%;
+					}
+				}
+			}
+		}
+	}
+}

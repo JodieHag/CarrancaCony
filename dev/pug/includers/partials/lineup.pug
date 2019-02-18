@@ -1,0 +1,46 @@
+- var lineup = i18n.lineup;
+
+section.content-section#lineup
+	.container
+		.row
+			.col-12
+				.lineup-artists-headline
+					.entry-title
+						p JUST THE BEST
+						h2 The Lineup Artists-Headliners
+					.lineup-artists
+						each val, index in lineup.items
+							if val && !(index % 2)
+								.lineup-artists-wrap.flex.flex-wrap
+									figure.featured-image
+										a(href=val.link)
+											img(src=val.picture alt='')
+									.lineup-artists-description
+										.lineup-artists-description-container
+											.entry-title
+												| #{val.name}
+											.entry-content
+												p
+													| #{val.description}
+											.box-link
+												a(href='')
+													img(src='images/box.jpg' alt='')
+							if val && (index % 2)
+								.lineup-artists-wrap.flex.flex-wrap
+									.lineup-artists-description
+										figure.featured-image.d-md-none
+											a(href=val.link)
+												img(src=val.picture alt='')
+										.lineup-artists-description-container
+											.entry-title
+												| #{val.name}
+											.entry-content
+												p
+													| #{val.description}
+											.box-link
+												a(href='')
+													img(src='images/box.jpg' alt='')
+									figure.featured-image.d-none.d-md-block
+										a(href=val.link)
+											img(src=val.picture alt='')
+

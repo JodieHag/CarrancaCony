@@ -1,3 +1,7 @@
+/* ======================================================================
+	Header
+======================================================================== */
+
 header {
   @extend %fix;
 	position: relative;
@@ -12,10 +16,13 @@ header {
 			width: 100%;
 			padding: 40px 0;
 
-			.site-branding {
-				margin-bottom: 0;
-				font-size: 30px;
-				font-weight: 800;
+			.logo {
+				margin: 0;
+				padding-left: 50px;
+
+				img {
+					max-width: 130px;
+				}
 			}
 
 			.site-navigation {
