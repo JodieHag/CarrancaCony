@@ -2,19 +2,79 @@
 	Footer
 ======================================================================== */
 
-footer {
-  color: $primarySoft;
-  background-color: $black;
-  text-align: center;
-  position: relative;
-  padding: 10px 15px;
-  &.fixing {
-    position: fixed;
-    bottom: 0;
-	  width: 100%;
-		.copy {
-			@include rem(font-size, $font-size-base);
-			margin: 0 0 20px;
+.site-footer {
+	position: relative;
+	padding: 40px 0 30px;
+
+	&::before {
+		position: absolute;
+		content: " ";
+		height: 100%;
+		width: 100%;
+		z-index: 3;
+		background: hsla(0,0%,5%,.7);
+		top: 0;
+		left: 0;
+	}
+
+	.footer-cover-title {
+		min-height: 480px;
+		width: 100%;
+
+		h2 {
+			font-size: 8vw;
+			font-weight: 700;
+			line-height: 1;
+			margin-bottom: 0;
+			text-align: center;
+			color: #fff;
+			mix-blend-mode: overlay;
+			z-index: 2;
 		}
 	}
+
+	.footer-content-wrapper {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		z-index: 4;
+		top: 130px;
+		left: 0;
+		padding: 6px 0;
+		text-align: center;
+
+		.entry-title {
+			text-align: center;
+			margin-top: 25px;
+
+			h2 {
+				font-size: 8vw;
+				font-weight: 700;
+				line-height: 1;
+				margin-bottom: 0;
+				text-align: center;
+				color: #fff;
+				mix-blend-mode: overlay;
+				z-index: 2;
+			}
+		}
+
+		.entry-mail {
+			margin-top: 16px;
+			font-size: 16px;
+			font-weight: 700;
+			color: #fff;
+		}
+
+		.copyright-info {
+			margin-top: 20px;
+			font-size: 12px;
+			color: #fff;
+		}
+
+		.footer-social {
+			margin-top: 32px;
+		}
+	}
+
 }

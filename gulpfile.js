@@ -70,10 +70,7 @@ gulp.task('sass', () => {
 
 // Concatenate & Minify JS
 gulp.task('scripts', () => {
-  return gulp.src(['src/js/*.js'])
-    .pipe(eslint('./.eslintrc'))
-    .pipe(eslint.format('table'))
-    .pipe(eslint.failAfterError())
+  return gulp.src(['node_modules/babel-polyfill/dist/polyfill.js', 'src/js/*.js'])
     .pipe(prettier({ singleQuote: true }))
     .pipe(babel())
     .pipe(concat('main.js'))
@@ -103,7 +100,7 @@ gulp.task('pug', async () => {
     for (const page in projectSettings.pages) {
       translations.push(
         await gulp.src('src/pug/' + projectSettings.pages[page] + '.pug')
-					.on('error', (error) => console.log(error))
+          .on('error', (error) => console.log(error))
           .pipe(pug({
             locals: {
               i18n: require('./src/i18n/' + projectSettings.langs[lang] + '/translation.json'),

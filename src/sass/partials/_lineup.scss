@@ -2,7 +2,7 @@
 	Lineup
 ======================================================================== */
 
-.content-section {
+#lineup.content-section {
 	width: 100%;
 	padding-bottom: 120px;
 	@include imgRetina($background-lineup, png, 100%, auto, center, repeat);

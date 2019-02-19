@@ -4,9 +4,7 @@ const config = {
     'ca': 'es-CA'
   },
   'pages': {
-    'index': 'index',
-    'form': 'form',
-    'gracias': 'gracias'
+    'index': 'index'
   }
 }
 
