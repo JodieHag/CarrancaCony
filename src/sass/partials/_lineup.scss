@@ -6,6 +6,8 @@
 	width: 100%;
 	padding-bottom: 120px;
 	@include imgRetina($background-lineup, png, 100%, auto, center, repeat);
+	border-bottom: 10px solid #fccdcb;
+	border-top: 10px solid #e2dcea;
 
 	.lineup-artists-headline {
 		margin-top: 115px;
