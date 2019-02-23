@@ -1,18 +1,27 @@
 {
   "meta": {
-    "titulo": "Estas veient: gulp tasks amb sass i json lang's"
+    "titulo": "CarrancaCony - 2019",
+		"description": "Festival"
   },
-  "general": {
-    "es": "Castellà",
+	"general": {
+		"title": "CARRANCA CONY",
+		"es": "Castellano",
 		"ca": "Català",
-		"en": "Anglés",
-		"gracias" : "Gracies",
-		"confirmacion" : "Formulari",
-		"home": "Inici"
-  },
+		"home" : "Inici",
+		"lineup" : "Grups",
+		"cartel": "Cartell",
+		"location": "¿On som?"
+	},
+	"countdown": {
+		"date": "06.04.2019",
+		"days": "Dies",
+		"minuts": "Minuts",
+		"hours": "Hores",
+		"senconds": "Segons"
+	},
 	"lineup": {
-		"title": "Line up",
-		"subtitle": "",
+		"title": "¡Grupazos!",
+		"subtitle": "Aquesta edició tenim:",
 		"items": [
 			{
 				"picture": "http://placekitten.com/g/200/300",
@@ -39,6 +48,18 @@
 				"link": ""
 			}
 		]
+	},
+	"footer": {
+		"email": "info@femrevol.com",
+		"copyright": "Copyright © 2019 Tots els drets reservats",
+		"facebook": "Facebook",
+		"twitter": "Twitter",
+		"instagram": "Instagram",
+		"colaborate": "Colabora:",
+		"organization": "Organitza:",
+		"femRevol": "FemRevol",
+		"carrancaRock": "CarrancaRock",
+		"ajuntament": "Ajuntament de Martorelles"
 	},
   "cookies": {
     "text": "Aquest lloc web utilitza cookies. En cas de continuar navegant entendrem que accepta l'ús d'aquests dispositius. Més informació:",

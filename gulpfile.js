@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 
 // Include Our Plugins
+const critical = require('critical')
 const log = require('fancy-log')
 const sass = require('gulp-sass')
 const postcss = require('gulp-postcss')
@@ -113,6 +114,14 @@ gulp.task('pug', async () => {
           .pipe(gulp.dest('www'))
           .pipe(livereload())
       )
+      critical.generate({
+        inline: true,
+        base: 'www/',
+        src: projectSettings.pages[page] + '_' + lang + '.html',
+        target: { html: 'index-critical.html', css: 'critical.css' },
+        width: 1300,
+        height: 900
+      })
     }
   }
   log('pug Done!')

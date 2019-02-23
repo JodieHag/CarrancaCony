@@ -8,12 +8,12 @@ header.site-header
 							img(src="./media/img/femrevol.png" alt="FemRevol")
 				.col-2.col-lg-8
 						nav.site-navigation
-							.hamburger-menu.d-lg-none
+							.hamburger-menu
 								span
 								span
 								span
 								span
-							ul
+							ul.langs
 								li
 									a(href="index_es.html")
 										span
@@ -22,17 +22,20 @@ header.site-header
 									a(href="index_ca.html")
 										span
 											|  #{i18n.general.ca}
+							ul
 								li
-									a(href='#') HOME
-								li
-									a(href="index_" + lang + ".html")
+									a(href="#countdown")
 										span
 											| #{i18n.general.home}
 								li
-									a(href="form_" + lang + ".html")
+									a(href="#lineup")
 										span
-											| #{i18n.general.confirmacion}
+											| #{i18n.general.lineup}
 								li
-									a(href="gracias_" + lang + ".html")
+									a(href="#cartel")
 										span
-											| #{i18n.general.gracias}
+											| #{i18n.general.cartel}
+								li
+									a(href="#location")
+										span
+											| #{i18n.general.location}

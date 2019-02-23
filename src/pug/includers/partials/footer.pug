@@ -1,39 +1,36 @@
 footer.site-footer
-	.footer-cover-title.flex.justify-content-center.align-items-center
-		h2 CARRANCÀ CONY
 	.footer-content-wrapper
 		.container
 			.row
 				.col-12
 					.entry-title
-						h2 CARRANCÀ CONY
+						h2 #{i18n.general.title}
 					.entry-mail
-						a(href='mailto:info@femrevol.com' target="_blank") info@femrevol.com
+						a(href='mailto:info@femrevol.com' target="_blank") #{i18n.footer.email}
 					.copyright-info
-						| Copyright &copy;
-						script.
-							document.write(new Date().getFullYear());
-						| All rights reserved
+						| #{i18n.footer.copyright}
 					.footer-social
-						ul.flex.justify-content-center.align-items-center
+						ul.flex.justify-content-around.align-items-center
 							li
-								a(href='#')
-									i.fab.fa-pinterest
-							li
-								a(href='#')
+								a(href='https://es-es.facebook.com/CarrancaCony/' target="_blank" title=i18n.footer.facebook)
 									i.fab.fa-facebook-f
 							li
-								a(href='#')
+								a(href='https://twitter.com/FemRevol' target="_blank" title=i18n.footer.twitter)
 									i.fab.fa-twitter
 							li
-								a(href='#')
-									i.fab.fa-dribbble
+								a(href='https://www.instagram.com/carrancacony/' target="_blank" title=i18n.footer.instagram)
+									i.fab.fa-instagram
+					.footer-colaborators
+						h4 #{i18n.footer.colaborate}
+						ul.flex.justify-content-around.align-items-center
 							li
-								a(href='#')
-									i.fab.fa-behance
+								img(src="./media/img/ajuntament_martorelles.png" alt=i18n.footer.ajuntament)
 							li
-								a(href='#')
-									i.fab.fa-linkedin-in
+								img(src="" alt=i18n.footer.carrancaRock)
+						h4 #{i18n.footer.organization}
+						ul.flex.justify-content-center.align-items-center
+							li
+								img(src="./media/img/femrevol.png" alt=i18n.footer.femRevol)
 
 
 

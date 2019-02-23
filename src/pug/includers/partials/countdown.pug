@@ -1,21 +1,21 @@
-.hero-content
+.hero-content#countdown
 	.container
 		.row
 			.col-12.offset-lg-1.col-lg-10
 				.entry-header
-					h1 CARRANCÀ CONY
+					h1 #{i18n.general.title}
 					.entry-meta-date
-						h2 06.04.2019
+						h2 #{i18n.countdown.date}
 				.countdown.flex.flex-wrap.justify-content-between(data-date='2019/04/06 18:00')
 					.countdown-holder
-						.dday 0
-						label Días
+						.dday X
+						label #{i18n.countdown.days}
 					.countdown-holder
-						.dhour 0
-						label Horas
+						.dhour X
+						label #{i18n.countdown.hours}
 					.countdown-holder
-						.dmin 0
-						label Minutos
+						.dmin X
+						label #{i18n.countdown.minuts}
 					.countdown-holder
-						.dsec 0
-						label Segundos
+						.dsec X
+						label #{i18n.countdown.senconds}

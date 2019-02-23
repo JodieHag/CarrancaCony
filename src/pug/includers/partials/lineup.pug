@@ -6,15 +6,15 @@ section.content-section#lineup
 			.col-12
 				.lineup-artists-headline
 					.entry-title
-						p JUST THE BEST
-						h2 The Lineup Artists-Headliners
+						p #{i18n.lineup.title}
+						h2 #{i18n.lineup.subtitle}
 					.lineup-artists
 						each val, index in lineup.items
 							if val && !(index % 2)
 								.lineup-artists-wrap.flex.flex-wrap
 									figure.featured-image
 										a(href=val.link)
-											img(src=val.picture alt='')
+											img(src=val.picture alt=val.name)
 									.lineup-artists-description
 										.lineup-artists-description-container
 											.entry-title
@@ -27,7 +27,7 @@ section.content-section#lineup
 									.lineup-artists-description
 										figure.featured-image.d-md-none
 											a(href=val.link)
-												img(src=val.picture alt='')
+												img(src=val.picture alt=val.name)
 										.lineup-artists-description-container
 											.entry-title
 												| #{val.name}
@@ -36,5 +36,5 @@ section.content-section#lineup
 													| #{val.description}
 									figure.featured-image.d-none.d-md-block
 										a(href=val.link)
-											img(src=val.picture alt='')
+											img(src=val.picture alt=val.name)
 

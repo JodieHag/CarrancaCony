@@ -1,3 +1,8 @@
 /* ======================================================================
 	  Fonts Face
 	======================================================================== */
+@import "../../css/fontawesome/scss/fontawesome";
+@import "../../css/fontawesome/scss/brands";
+
+@include font-face('Permanent Marker', '/media/font/Permanent_Marker/PermanentMarker-Regular', 'normal', 'normal');
+@include font-face('Varela Round', '/media/font/Varela_Round/VarelaRound-Regular', 'normal', 'normal');

@@ -5,17 +5,7 @@
 .site-footer {
 	position: relative;
 	padding: 40px 0 30px;
-
-	&::before {
-		position: absolute;
-		content: " ";
-		height: 100%;
-		width: 100%;
-		z-index: 3;
-		background: $secondary;
-		top: 0;
-		left: 0;
-	}
+	background: $secondary;
 
 	.footer-cover-title {
 		min-height: 480px;
@@ -34,11 +24,10 @@
 	}
 
 	.footer-content-wrapper {
-		position: absolute;
+		position: relative;
 		width: 100%;
 		height: auto;
 		z-index: 4;
-		top: 130px;
 		left: 0;
 		padding: 6px 0;
 		text-align: center;
@@ -74,6 +63,18 @@
 
 		.footer-social {
 			margin-top: 32px;
+		}
+
+		.footer-colaborators {
+			color: $white;
+			h4 {
+				padding: 15px 0;
+			}
+			img {
+				max-width: 150px;
+				width: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 

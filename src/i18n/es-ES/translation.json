@@ -1,19 +1,28 @@
 {
   "meta": {
-    "titulo": "Estás viendo: Gulp 4.0 tasks con sass y json lang's"
+    "titulo": "CarrancaCony - 2019",
+		"description": "Festival"
   },
 
   "general": {
+		"title": "CARRANCA CONY",
     "es": "Castellano",
-		"ca": "Catalán",
-		"en": "Inglés",
-		"gracias" : "Gracias",
-		"confirmacion" : "Formulario",
-		"home": "Inicio"
+		"ca": "Catalan",
+		"home" : "Inicio",
+		"lineup" : "Grupos",
+		"cartel": "Cartel",
+		"location": "¿Dónde estamos?"
   },
+	"countdown": {
+		"date": "06.04.2019",
+		"days": "Días",
+		"minuts": "Minutos",
+		"hours": "Horas",
+		"senconds": "Segundos"
+	},
 	"lineup": {
-		"title": "Line up",
-		"subtitle": "",
+		"title": "¡Grupazos!",
+		"subtitle": "Esta edición tenémos:",
 		"items": [
 			{
 				"picture": "http://placekitten.com/g/200/300",
@@ -40,6 +49,18 @@
 				"link": ""
 			}
 		]
+	},
+	"footer": {
+		"email": "info@femrevol.com",
+		"copyright": "Copyright © 2019 Todos los derechos reservados",
+		"facebook": "Facebook",
+		"twitter": "Twitter",
+		"instagram": "Instagram",
+		"colaborate": "Colabora:",
+		"organization": "Organiza:",
+		"femRevol": "FemRevol",
+		"carrancaRock": "CarrancaRock",
+		"ajuntament": "Ajuntament de Martorelles"
 	},
   "cookies": {
     "text": "This website uses cookies. By continuing to explore this site, we understand that you accept their use. Further information:",
