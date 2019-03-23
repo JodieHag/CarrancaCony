@@ -1,16 +1,24 @@
 {
   "meta": {
     "titulo": "CarrancaCony - 2019",
-		"description": "Festival"
+		"description": "Esdeveniment feminista que té com objectiu visibilitzar a les dones en el món de la música, denunciar/debatre les desigualtats que es donen en aquest àmbit i, per suposat, generar cultura i ocupar els escenaris a la nostra manera!",
+		"keywords": "feminista, festival, esdeveniment, dones, visibilitzar, música, desigualtats, carrancacony"
   },
 	"general": {
 		"title": "CARRANCA CONY",
 		"es": "Castellano",
 		"ca": "Català",
 		"home" : "Inici",
+		"about": "Qui som?",
 		"lineup" : "Grups",
 		"cartel": "Cartell",
 		"location": "¿On som?"
+	},
+	"about": {
+		"titleAbout": "QUI SOM?",
+		"descriptionAbout": "FemRevol és un col·lectiu feminista que va néixer al 2017 al baix vallès, format per un grup de dones diverses que volen canviar les coses. Cansades de viure en una societat heteropatriarcal i capitalista, volem aconseguir una igualtat real d'oportunitats, visibilitzar i denunciar les violències masclistes del nostre entorn, així com qualsevol forma de discriminació.\nVam escollir aquest nom perquè tenim clar que la revolució serà feminista o no serà! I es per això que FemRevol vol fer revolució!!\nEns considerem un col·lectiu obert a totes les dones que vulguin unir-se i participar. Sempre des del respecte, la unió, la sororitat i l'empoderament.\n",
+		"titleProject": "EL PROJECTE: CARRANCÀCONY",
+		"descriptionProject": "Esdeveniment feminista que té com objectiu visibilitzar a les dones en el món de la música, denunciar/debatre les desigualtats que es donen en aquest àmbit i, per suposat, generar cultura i ocupar els escenaris a la nostra manera!\n\nCom vam néixer…\nAlgunes de nosaltres formem part d’una associació de músics i músiques. Després de més de 15 anys muntant concerts. estavem cansades de demanar la “quota femenina” en els bolos i de veure com, tot i així, no es prenia consciència del que explicavem. \n\nAixí doncs ens vam posar en contacte amb altres dones del territori i ens vam posar a treballar. El 8 d’abril de 2017 unes 200 persones van assistir al primer CarrancàCony. Durant la jornada, en ambdues edicions que ja hem realitzat, a més de les actuacions, realitzem un pas de documental per tal de generar debat sobre el tema i dinamitzem accions informatives i de protesta.\n\nDesprés d’aquest èxit, estavem tan motivades que el grup motor va seguir quedant per compartir experiències, generar discurs i continuar molestant al sistema patriarcal. Així va néixer el col·lectiu feminista FemRevol.\n\nEl CarrancàCony té com a premisa de comptar només amb dones (cis, trans, queer) tant al escenari com a l’equip tècnic i a la organització. \n"
 	},
 	"countdown": {
 		"date": "06.04.2019",
@@ -24,30 +32,32 @@
 		"subtitle": "Aquesta edició tenim:",
 		"items": [
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "Pasquines",
-				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"picture": "media/img/Joina2.jpg",
+				"name": "JOINA",
+				"description": "JOINA és una artista empordanesa transgressora que debuta amb el seu primer disc Companyes. <br/> El treball que ens presentarà és un recull de cançons de rap en català amb una forta càrrega feminista i de reivindicació social. Aquest disc combina influències del hip-hop, el funk, flamenc i l'electrònica. Inspira determinació i lluita però a la vegada molta tendresa i llum. Les companyes que formen la banda són: Marina Tomás Amado - guitarra i coros, Abril Saurí - bateria, percu i coros, Ana Cruz - baix, Maria Cruz - saxo, Joina - teclat i veu.",
 				"link": "#"
 			},
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "Maruja Limón",
-				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"picture": "media/img/clika-pika.jpg",
+				"name": "CLIKAPIKA",
+				"description": "Nascudes d'uns tallers de rap no-mixtes autogestionats del barri de la Teixonera sorgeix un petit grup de persones amb moltes ganes de donar-li canya al patriarcat desde els escenaris i desde la cultura Hiphop. D'aquesta manera, les Clikapika s'han anat fent més grans incorporant a més persones en el seu camí. Actualment son un grup de hiphop feminista de Barcelona, on hi primen les seves conviccions, la seva manera de organitzar-se de forma horitzontal i assamblearia i on intenten posar les cures al centre de totes les seves decisions com a grup.",
 				"link": "#"
 			},
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "Fancy Candy girls",
+				"picture": "media/img/abiertas-hasta-el-amanecer.jpg",
+				"name": "ABIERTAS HASTA EL AMANECER",
 				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
 				"link": ""
 			},
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "DJ M&M",
-				"description": "Annoy the old grumpy cat, start a fight and then retreat to wash when i lose if it fits, i sits jump off balcony, onto stranger",
+				"picture": "media/img/logo-Ixentes.jpg",
+				"name": "IXENTES",
+				"description": "Som un grup de dones que es van unir perquè van creure necessari generar espais d'ocis amb referents femenins, volen renovar els espais de festa on l'únic missatge que es dóna està vinculat al sistema heteropatriarcal. D'aquesta inquietud neix Ixentes, amb l'objectiu de crear sessions de música feminista.",
 				"link": ""
 			}
-		]
+		],
+		"documental": "https://www.youtube.com/watch?v=BsxoKLFOSig",
+		"documentalTitle": "Video Promocional"
 	},
 	"footer": {
 		"email": "info@femrevol.com",

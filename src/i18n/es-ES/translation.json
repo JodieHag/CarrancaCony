@@ -9,10 +9,17 @@
     "es": "Castellano",
 		"ca": "Catalan",
 		"home" : "Inicio",
+		"about": "Quien somos",
 		"lineup" : "Grupos",
 		"cartel": "Cartel",
 		"location": "¿Dónde estamos?"
   },
+	"about": {
+		"titleAbout": "QUI SOM?",
+		"descriptionAbout": "FemRevol és un col·lectiu feminista que va néixer al 2017 al baix vallès, format per un grup de dones diverses que volen canviar les coses. Cansades de viure en una societat heteropatriarcal i capitalista, volem aconseguir una igualtat real d'oportunitats, visibilitzar i denunciar les violències masclistes del nostre entorn, així com qualsevol forma de discriminació. </br> </br>Vam escollir aquest nom perquè tenim clar que la revolució serà feminista o no serà! I es per això que FemRevol vol fer revolució!!</br></br>Ens considerem un col·lectiu obert a totes les dones que vulguin unir-se i participar. Sempre des del respecte, la unió, la sororitat i l'empoderament.",
+		"titleProject": "EL PROJECTE: CARRANCÀCONY",
+		"descriptionProject": "esdeveniment feminista que té com objectiu visibilitzar a les dones en el món de la música, denunciar/debatre les desigualtats que es donen en aquest àmbit i, per suposat, generar cultura i ocupar els escenaris a la nostra manera!</br></br>Com vam néixer…</br></br>Algunes de nosaltres formem part d’una associació de músics i músiques. Després de més de 15 anys muntant concerts. estavem cansades de demanar la “quota femenina” en els bolos i de veure com, tot i així, no es prenia consciència del que explicavem. </br></br>Així doncs ens vam posar en contacte amb altres dones del territori i ens vam posar a treballar. El 8 d’abril de 2017 unes 200 persones van assistir al primer CarrancàCony. Durant la jornada, en ambdues edicions que ja hem realitzat, a més de les actuacions, realitzem un pas de documental per tal de generar debat sobre el tema i dinamitzem accions informatives i de protesta.</br></br>Després d’aquest èxit, estavem tan motivades que el grup motor va seguir quedant per compartir experiències, generar discurs i continuar molestant al sistema patriarcal. Així va néixer el col·lectiu feminista FemRevol.</br></br>El CarrancàCony té com a premisa de comptar només amb dones (cis, trans, queer) tant al escenari com a l’equip tècnic i a la organització."
+	},
 	"countdown": {
 		"date": "06.04.2019",
 		"days": "Días",
@@ -26,8 +33,8 @@
 		"items": [
 			{
 				"picture": "http://placekitten.com/g/200/300",
-				"name": "Pasquines",
-				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"name": "IXENTES",
+				"description": "Som un grup de dones que ens vam unir perquè vam creure necessari generar espais d'ocis amb referents femenins, volen renovar els espais de festa on l'únic missatge que es dóna està vinculat al sistema heteropatriarcal. D'aquesta inquietud neix Ixentes, amb l'objectiu de crear sessions de música feminista.\n",
 				"link": "#"
 			},
 			{
@@ -48,7 +55,9 @@
 				"description": "Annoy the old grumpy cat, start a fight and then retreat to wash when i lose if it fits, i sits jump off balcony, onto stranger",
 				"link": ""
 			}
-		]
+		],
+		"documental": "https://www.youtube.com/watch?v=BsxoKLFOSig",
+		"documentalTitle": "Video Promocional"
 	},
 	"footer": {
 		"email": "info@femrevol.com",

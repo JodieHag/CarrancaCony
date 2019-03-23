@@ -103,17 +103,36 @@
 				img {
 					width: 100%;
 					max-width: 100%;
+					min-height: auto;
+					object-fit: cover;
 
 					@include modular-mq(sm) {
+						min-height: auto;
 						max-height: 417px;
 						object-fit: cover;
 					}
 
 					@include modular-mq(ssm) {
+						min-height: 550px;
 						max-height: 100%;
 					}
 				}
 			}
+		}
+	}
+
+
+}
+
+#promo {
+	background-color: #ffcbca;
+	.lineup-artists-promotional-video {
+		text-align: center;
+		margin: 4%;
+
+		h3 {
+			font-weight: bold;
+			padding: 15px;
 		}
 	}
 }
