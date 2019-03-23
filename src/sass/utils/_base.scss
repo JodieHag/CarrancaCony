@@ -24,7 +24,7 @@
 }
 
 body {
-	background-color: $white;
+	background-color: $primary;
 	color: $black;
 	font-family: $font-secondary;
 	font-weight: 400;
@@ -37,6 +37,11 @@ body {
     max-width: $content-width;
     position: relative;
     padding: 0 15px;
+}
+
+.card {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border: none;
 }
 
 ul {

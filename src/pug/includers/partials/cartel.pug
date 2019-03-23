@@ -1,7 +1,10 @@
 section.content-section#cartel
 	.container
-				.row
-					.col-12
-						.cartel-view
-							a(download="carrancacony-19.png" href="./media/img/carrancacony-18.png" title="Descargar el cartel")
-								img(src="./media/img/carrancacony-19.png" alt="cartel 2018" data-toggle="tooltip" data-placement="top" title="Descargar el cartel")
+		.row
+			.col-12
+				.cartel-title
+					h3
+						| #{i18n.cartel.title}
+				.cartel-view
+					a(download="carrancacony-19.png" href="./media/img/carrancacony-18.webp" title=i18n.cartel.tooltipImg)
+						img(src=i18n.cartel.urlImg alt=i18n.cartel.altImg data-toggle="tooltip" data-placement="top" title=i18n.cartel.tooltipImg)

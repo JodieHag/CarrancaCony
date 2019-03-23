@@ -5,7 +5,7 @@
 #lineup.content-section {
 	width: 100%;
 	padding-bottom: 120px;
-	@include imgRetina($background-lineup, png, 100%, auto, center, repeat);
+	@include imgRetina($background-lineup, webp, 100%, auto, center, repeat);
 	border-bottom: 10px solid #fccdcb;
 	border-top: 10px solid #e2dcea;
 
@@ -125,14 +125,26 @@
 }
 
 #promo {
-	background-color: #ffcbca;
+	padding: 40px 0;
 	.lineup-artists-promotional-video {
 		text-align: center;
-		margin: 4%;
 
 		h3 {
+			margin: 30px 0;
+			text-align: center;
 			font-weight: bold;
-			padding: 15px;
+			text-transform: uppercase;
+
+			&:after {
+				content: "";
+				position: unset;
+				display: block;
+				width: 90px;
+				height: 2px;
+				background: $brand;
+				margin: 20px auto;
+				bottom: 0;
+			}
 		}
 	}
 }

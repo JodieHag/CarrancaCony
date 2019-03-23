@@ -1,16 +1,17 @@
-- var about = i18n.lineup;
-
 section.content-section#about
 	.container
 		.row
-			.col-12
-				h3
-					| #{i18n.about.titleAbout}
-				p
-					| !{i18n.about.descriptionAbout}
-		.row
-			.col-12
-				h3
-					| #{i18n.about.titleProject}
-				p
-					| !{i18n.about.descriptionProject}
+			.col-md-6
+				.card
+					.card-body
+						h3.card-title
+							| #{i18n.about.titleAbout}
+						p.card-text
+							| !{i18n.about.descriptionAbout}
+			.col-md-6
+				.card
+					.card-body
+						h3.card-title
+							| #{i18n.about.titleProject}
+						p.card-text
+							| !{i18n.about.descriptionProject}

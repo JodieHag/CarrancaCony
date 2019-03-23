@@ -104,8 +104,8 @@
 
 // Using this mixin you can combine media queries and normal CSS image
 // replacement to send high resolution images to retina devices and standard resolution
-// images everywhere else. At first please make a standard resolution image ex: logo.png and
-// a high resolution image ex: logo-2x.png. If it’s a retina display, add -2x after images
+// images everywhere else. At first please make a standard resolution image ex: logo.webp and
+// a high resolution image ex: logo-2x.webp. If it’s a retina display, add -2x after images
 // name and set background-size.
 //
 // Please note your CSS code might be longer than you expected when it’s complied if you have many retina images.

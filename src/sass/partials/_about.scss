@@ -1,9 +1,20 @@
 #about {
-	padding: 40px 0;
+	padding: 50px 0;
 
 	h3 {
 		margin: 30px 0;
 		text-align: center;
 		font-weight: bold;
+
+		&:after {
+			content: "";
+			position: unset;
+			display: block;
+			width: 90px;
+			height: 2px;
+			background: $brand;
+			margin: 20px auto;
+			bottom: 0;
+		}
 	}
 }

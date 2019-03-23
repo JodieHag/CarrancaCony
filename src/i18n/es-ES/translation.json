@@ -20,6 +20,12 @@
 		"titleProject": "EL PROJECTE: CARRANCÀCONY",
 		"descriptionProject": "esdeveniment feminista que té com objectiu visibilitzar a les dones en el món de la música, denunciar/debatre les desigualtats que es donen en aquest àmbit i, per suposat, generar cultura i ocupar els escenaris a la nostra manera!</br></br>Com vam néixer…</br></br>Algunes de nosaltres formem part d’una associació de músics i músiques. Després de més de 15 anys muntant concerts. estavem cansades de demanar la “quota femenina” en els bolos i de veure com, tot i així, no es prenia consciència del que explicavem. </br></br>Així doncs ens vam posar en contacte amb altres dones del territori i ens vam posar a treballar. El 8 d’abril de 2017 unes 200 persones van assistir al primer CarrancàCony. Durant la jornada, en ambdues edicions que ja hem realitzat, a més de les actuacions, realitzem un pas de documental per tal de generar debat sobre el tema i dinamitzem accions informatives i de protesta.</br></br>Després d’aquest èxit, estavem tan motivades que el grup motor va seguir quedant per compartir experiències, generar discurs i continuar molestant al sistema patriarcal. Així va néixer el col·lectiu feminista FemRevol.</br></br>El CarrancàCony té com a premisa de comptar només amb dones (cis, trans, queer) tant al escenari com a l’equip tècnic i a la organització."
 	},
+	"cartel": {
+		"title": "El nostre cartell",
+		"urlImg": "./media/img/carrancacony-19.png",
+		"altImg": "Carrancà Cony 2019",
+		"tooltipImg": "Descarrega el nostre cartell fent click a l'imatge"
+	},
 	"countdown": {
 		"date": "06.04.2019",
 		"days": "Días",
