@@ -22,7 +22,7 @@
 	},
 	"cartel": {
 		"title": "El nostre cartell",
-		"urlImg": "./media/img/carrancacony-19.png",
+		"urlImg": "./media/img/carrancacony-19.webp",
 		"altImg": "Carrancà Cony 2019",
 		"tooltipImg": "Descarrega el nostre cartell fent click a l'imatge"
 	},
@@ -38,27 +38,31 @@
 		"subtitle": "Esta edición tenémos:",
 		"items": [
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "IXENTES",
-				"description": "Som un grup de dones que ens vam unir perquè vam creure necessari generar espais d'ocis amb referents femenins, volen renovar els espais de festa on l'únic missatge que es dóna està vinculat al sistema heteropatriarcal. D'aquesta inquietud neix Ixentes, amb l'objectiu de crear sessions de música feminista.\n",
+				"picture": "media/img/Joina2.webp",
+				"pictureNonSupport": "media/img/Joina2.jpg",
+				"name": "JOINA",
+				"description": "JOINA és una artista empordanesa transgressora que debuta amb el seu primer disc Companyes. <br/> El treball que ens presentarà és un recull de cançons de rap en català amb una forta càrrega feminista i de reivindicació social. Aquest disc combina influències del hip-hop, el funk, flamenc i l'electrònica. Inspira determinació i lluita però a la vegada molta tendresa i llum. Les companyes que formen la banda són: Marina Tomás Amado - guitarra i coros, Abril Saurí - bateria, percu i coros, Ana Cruz - baix, Maria Cruz - saxo, Joina - teclat i veu.",
 				"link": "#"
 			},
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "Maruja Limón",
-				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"picture": "media/img/clika-pika.webp",
+				"pictureNonSupport": "media/img/clika-pika.jpg",
+				"name": "CLIKAPIKA",
+				"description": "Nascudes d'uns tallers de rap no-mixtes autogestionats del barri de la Teixonera sorgeix un petit grup de persones amb moltes ganes de donar-li canya al patriarcat desde els escenaris i desde la cultura Hiphop. D'aquesta manera, les Clikapika s'han anat fent més grans incorporant a més persones en el seu camí. Actualment son un grup de hiphop feminista de Barcelona, on hi primen les seves conviccions, la seva manera de organitzar-se de forma horitzontal i assamblearia i on intenten posar les cures al centre de totes les seves decisions com a grup.",
 				"link": "#"
 			},
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "Fancy Candy girls",
-				"description": "Cat ipsum dolor sit amet, scratch at the door then walk away, but i shall purr myself to sleep pet my belly, you know you want to; seize the hand and shred it! but hunt by meowing loudly at 5am next to human slave food dispenser. Poop on grasses toy mouse squeak roll over yet sit on human hide from vacuum cleaner. ",
+				"picture": "media/img/abiertas-hasta-el-amanecer.webp",
+				"pictureNonSupport": "media/img/abiertas-hasta-el-amanecer.jpg",
+				"name": "ABIERTAS HASTA EL AMANECER",
+				"description": "Reines del no-res, princeses d'abocador. Sota l'influx del nostre flux, punk-rock entre guerreres.",
 				"link": ""
 			},
 			{
-				"picture": "http://placekitten.com/g/200/300",
-				"name": "DJ M&M",
-				"description": "Annoy the old grumpy cat, start a fight and then retreat to wash when i lose if it fits, i sits jump off balcony, onto stranger",
+				"picture": "media/img/logo-Ixentes.webp",
+				"pictureNonSupport": "media/img/logo-Ixentes.jpg",
+				"name": "IXENTES",
+				"description": "Som un grup de dones que es van unir perquè van creure necessari generar espais d'ocis amb referents femenins, volen renovar els espais de festa on l'únic missatge que es dóna està vinculat al sistema heteropatriarcal. D'aquesta inquietud neix Ixentes, amb l'objectiu de crear sessions de música feminista.",
 				"link": ""
 			}
 		],
